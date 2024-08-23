@@ -6,7 +6,8 @@ module.exports = {
       colors:{
  neon: '#ABEF5F',
  blackcustom:'#1C1C1C',
- wri:'#737373'
+ wri:'#737373',
+ 
       }
     },
   },

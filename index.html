@@ -18,7 +18,24 @@
        <style>
         .manrope{
             font-family: "Manrope", sans-serif;
+   
+
         }
+        .container {
+    background-image: url(./Images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+ 
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
 
        </style>
        <!-- fontawesome -->
@@ -26,8 +43,8 @@
 
     <title>Rinterio</title>
 </head>
-<body class="manrope">
-  <header>
+<body class="manrope bg-slate-300 ">
+  <header class="bg-white">
       <div class="flex items-center justify-between max-w-screen-xl mx-auto p-5">
           <!-- Logo -->
           <div class="flex items-center">
@@ -77,21 +94,86 @@
           striking appearance</p>
         <p class="text-center text-[#494949] font-thin text-xs mt-4 mb-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
 
-       <div class="flex justify-center mb-10">
-        <button class="px-6 py-2 w-48 rounded-full bg-[#d6fcab] text-black font-bold flex items-center justify-center space-x-4 mx-auto max-sm:w-64">
-          <span>View Details</span>
-          <i class="fa-solid fa-circle-arrow-up rounded-full rotate-45 text-[#a6e45f] text-2xl"></i>
-      </button>
-      
-       </div>
+       <section class="bg-[]">
+        <div class="flex justify- h-1/2">
+          <button class="px-6 mb-5 py-2 w-48 rounded-full bg-[#d6fcab] text-black font-bold flex items-center justify-center space-x-4 mx-auto max-sm:w-64">
+            <span>View Details</span>
+            <i class="fa-solid fa-circle-arrow-up rounded-full rotate-45 text-[#a6e45f] text-2xl"></i>
+        </button>
+        
+         </div>
+       </section>
+
 
 
 
 
       </div>
+      <div class="mb-4">
+
+      </div>
   </header>
 
   <main>
+    <div class="container ">
+      <div class="items-center h-screen  ">
+        <!-- First Div -->
+        <div class="max-sm:flex-col flex flex-col items-center space-y-4 p-6   rounded-lg ">
+          <!-- Small Button -->
+          <button class="px-4 py-2 bg-[#c4ee94]  font-bold rounded-full text-sm text-black">
+            <i class="fa-solid fa-arrow-right"></i> Let's Connect
+          </button>
+      
+          <!-- First Paragraph -->
+          <p class="text-4xl font-black">
+            Let's Discuss Next Project
+          </p>
+      
+          <!-- Second Paragraph -->
+          <p class="text-sm text-gray-600 text-center">
+            The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="w-[500px] mx-auto flex flex-col space-y-4 ">
+          <!-- First Row with Two Text Boxes -->
+          <div class="flex space-x-4 max-sm:flex-col">
+            <!-- First Name Text Box -->
+            <input type="text" placeholder="First Name*" 
+                   class="w-1/2 p-3 bg-white text-black placeholder-gray-500 rounded-full max-sm:mb-4 max-sm:translate-x-14">
+            <!-- Last Name Text Box -->
+            <input type="text" placeholder="Last Name*" 
+                   class="w-1/2 p-3 bg-white text-black placeholder-gray-500 rounded-full max-sm:translate-x-9">
+          </div>
+        
+          <!-- Second Row with Two Text Boxes -->
+          <div class="flex space-x-4 max-sm:flex-col">
+            <!-- First Name Text Box -->
+            <input type="text" placeholder="Phone Number*" 
+                   class="w-1/2 p-3 bg-white text-black placeholder-gray-500 rounded-full max-sm:translate-x-14">
+                   <br>
+            <!-- Last Name Text Box -->
+            <input type="text" placeholder="Email*" 
+                   class="w-1/2 p-3 bg-white text-black placeholder-gray-500 rounded-full max-sm:translate-x-11">
+          </div>
+          
+          <!-- Single Large Text Box -->
+          <textarea placeholder="Write your Message Here" 
+                    class="w-full min-h-64 p-3 rounded-lg bg-white text-black  placeholder-gray-500 max-sm:w-2/4 max-sm:translate-x-14"></textarea>
+          
+          <!-- Full Width Button -->
+          <button 
+                  class="w-full h-12 p-3 gap-2  bg-lime-500 text-black font-black flex items-center justify-center rounded-full max-sm:w-52 max-sm:translate-x-16 ">
+                  <i class="fa-solid fa-circle-arrow-up rotate-45 gap-2"></i> Send Mail
+          </button>
+        </div>
+         
+      </div>
+      
+
+    </div>
+    
+    
+    
   </main>
  
   <footer class="bg-black h-auto text-white py-10">
