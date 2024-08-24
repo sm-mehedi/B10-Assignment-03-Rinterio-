@@ -21,19 +21,31 @@
    
 
         }
-        .container {
+        html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background-image: url(./Images/bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 850px;
- 
-
+    min-height: 100vh;
 }
-html, body {
+
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
+
+
 
 
 
@@ -94,7 +106,7 @@ html, body {
           striking appearance</p>
         <p class="text-center text-[#494949] font-thin text-xs mt-4 mb-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
 
-       <section class="bg-[]">
+       <section>
         <div class="flex justify- h-1/2">
           <button class="px-6 mb-5 py-2 w-48 rounded-full bg-[#d6fcab] text-black font-bold flex items-center justify-center space-x-4 mx-auto max-sm:w-64">
             <span>View Details</span>
@@ -115,17 +127,98 @@ html, body {
   </header>
 
   <main>
-    <div class="container ">
-      <div class="items-center h-screen  ">
+    <div class="flex flex-row max-sm:flex-col rounded-lg bg-white p-6 shadow-lg mb-10 mt-20">
+      <!-- First div: Text Content -->
+      <div class="flex-1 p-4">
+          <h2 class="text-bolder text-4xl mb-4">Want a Virtual Tour of the Design?</h2>
+          <p class="text-gray-500 mb-4 font-light">
+              Discover our property design through an immersive virtual tour. Experience every detail and feature of our designs from the comfort of your own space. Our virtual tour provides a comprehensive view, allowing you to visualize the layout and aesthetic of your future home with ease. See how our designs can transform your living space and help you make informed decisions about your next project.
+          </p>
+          <button class="flex items-center gap-3 px-6 py-2 rounded-full bg-[#a6e45f] text-white font-bold ">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Book Now</span>
+        </button>
+        
+      </div>
+  
+      <!-- Second div: Video -->
+      <div class="flex-1 p-4 flex items-center justify-center">
+    <div class="w-full max-w-screen-lg"> <!-- Adjust the max width as needed -->
+        <video controls autoplay loop class="rounded-lg w-full h-auto">
+            <source src="./Images/4770380-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+  </div>
+
+  <div class="flex flex-col items-center justify-center min-h-screen mb-9">
+    <!-- writing -->
+    <div class="flex flex-col items-center justify-center">
+      <button class="bg-white text-black font-bold py-2 px-4  w-40 rounded-full mb-4">
+        <i class="fa-solid fa-arrow-right"></i> How we works
+      </button>
+      <p class="text-black text-4xl font-black text-center">
+        Our Works Process
+      </p>
+      <p class="text-center mt-2">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+    <!-- boxes -->
+    <div class="flex flex-row space-x-8 mt-4  max-sm:flex-col max-sm:gap-4">
+     
+      <div class="bg-[#E7C1D3] text-black p-6 w-60 h-60 flex items-center justify-center rounded-lg max-sm:ml-8">
+       <div class="flex flex-col">
+        <img src="./Images/concept.png" alt="" class="w-12">
+        <p class="text-black font-bold text-2xl">Concept</p>
+        <p>
+          The barn house captivates with its blend of rustic charm <br> and modern
+        </p>
+       </div>
+       
+      </div>
+      <div class="bg-[#EFDA6E] text-black p-6 w-60 h-60 flex items-center justify-center rounded-lg">
+        <div class="flex flex-col">
+          <img src="./Images/flow-chart.png" alt="" class="w-12">
+          <p class="text-black font-bold text-2xl">Design Process</p>
+          <p>
+            The barn house captivates with its blend of rustic charm <br> and modern
+          </p>
+         </div>
+      </div>
+      <div class="bg-[#A4DAC3] text-black p-6 w-60 h-60 flex items-center justify-center rounded-lg">
+        <div class="flex flex-col">
+          <img src="./Images/vision.png" alt="" class="w-12">
+          <p class="text-black font-bold text-2xl">Supervison</p>
+          <p>
+            The barn house captivates with its blend of rustic charm <br> and modern
+          </p>
+         </div>
+      </div>
+      <div class="bg-[#77AAEA] text-black p-6 w-60 h-60 flex items-center justify-center rounded-lg">
+        <div class="flex flex-col">
+          <img src="./Images/budget-planning.png" alt="" class="w-12">
+          <p class="text-black font-bold text-2xl">Budget Planning</p>
+          <p>
+            The barn house captivates with its blend of rustic charm <br> and modern
+          </p>
+         </div>
+      </div>
+    </div>
+  </div>
+  
+  
+   <!-- NEED WORK -->
+      <div class="container">
         <!-- First Div -->
-        <div class="max-sm:flex-col flex flex-col items-center space-y-4 p-6   rounded-lg ">
+        <div class="max-sm:flex-col flex flex-col items-center space-y-4 p-6  ">
           <!-- Small Button -->
           <button class="px-4 py-2 bg-[#c4ee94]  font-bold rounded-full text-sm text-black">
             <i class="fa-solid fa-arrow-right"></i> Let's Connect
           </button>
       
           <!-- First Paragraph -->
-          <p class="text-4xl font-black">
+          <p class="text-4xl font-black text-center">
             Let's Discuss Next Project
           </p>
       
@@ -168,9 +261,9 @@ html, body {
         </div>
          
       </div>
-      
+      <!--NEED WORK  -->
 
-    </div>
+ 
     
     
     
