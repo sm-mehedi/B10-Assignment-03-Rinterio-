@@ -1,3 +1,4 @@
+
 # Rinterio - Frontend Development Assignment
 
 This project is a frontend development assignment for Programming Hero, Batch 10. The project demonstrates the use of Tailwind CSS and DaisyUI to create a responsive, modern website for an interior design company named "Rinterio."
@@ -60,5 +61,5 @@ To get started with the project, follow these steps:
 Contributing
 Contributions are welcome! If you have any ideas or suggestions, feel free to fork the repository and submit a pull request.
 
-
+Live - https://sm-mehedi.github.io/B10-Assignment-03-Rinterio-/
 
